@@ -1,7 +1,7 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
 
-import Image, { ImageProps } from 'next/image';
+import Image, { ImageProps } from 'next/legacy/image';
 
 import styles from './styles.module.css';
 
@@ -32,7 +32,8 @@ function ImageWrapper(props: Props) {
                 <Image
                     src={src}
                     className={_cs(imageClassName, styles.image)}
-                    fill
+                    layout="fill"
+                    placeholder="blur"
                     // eslint-disable-next-line react/jsx-props-no-spreading
                     {...otherProps}
                 />

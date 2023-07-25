@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Lato, DM_Sans } from 'next/font/google';
+import { Manrope, Crimson_Text } from 'next/font/google';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import posthog from 'posthog-js';
@@ -21,14 +21,14 @@ if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
     });
 }
 
-const lato = Lato({
+const manrope = Manrope({
     weight: ['400', '700'],
     subsets: ['latin'],
     display: 'swap',
 });
 
-const dmSans = DM_Sans({
-    weight: ['400', '500', '700'],
+const crimsonText = Crimson_Text({
+    weight: ['400', '600', '700'],
     subsets: ['latin'],
     display: 'swap',
 });
@@ -60,8 +60,8 @@ function MyApp(props: AppProps) {
             >
                 {`
                 :root {
-                    --font-family-lato: ${lato.style.fontFamily};
-                    --font-family-dm-sans: ${dmSans.style.fontFamily};
+                    --font-family-lato: ${manrope.style.fontFamily};
+                    --font-family-dm-sans: ${crimsonText.style.fontFamily};
                 }
                 `}
             </style>

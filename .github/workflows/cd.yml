@@ -34,12 +34,6 @@ jobs:
       - name: Run yarn install
         run: yarn install
 
-      - name: Download data
-        # NOTE: This will add env.MAPSWIPE_API_LAST_MODIFIED_EPOCH
-        run: ./scripts/download-data.sh
-        env:
-          MAPSWIPE_API_ENDPOINT: ${{ vars.MAPSWIPE_API_ENDPOINT }}
-
       - name: Build + Test
         run: yarn build
         timeout-minutes: 30
@@ -47,11 +41,7 @@ jobs:
           # Common
           NODE_OPTIONS: --max_old_space_size=4096
           # App ENV
-          MAPSWIPE_COMMUNITY_API_ENDPOINT: ${{ vars.MAPSWIPE_COMMUNITY_API_ENDPOINT }}
-          MAPSWIPE_API_ENDPOINT: ${{ vars.MAPSWIPE_API_ENDPOINT }}
           NEXT_PUBLIC_POSTHOG_KEY: phc_oJiIyzhBjXMhfkqNAAU2flwbYdfepWg7Z9RU0x4RWRk
-          # Build Date
-          MAPSWIPE_BUILD_DATE: ${{ env.MAPSWIPE_API_LAST_MODIFIED_EPOCH }}
 
       - name: Upload GH artifacts
         uses: actions/upload-pages-artifact@v1
