@@ -1,0 +1,51 @@
+.button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+
+    &.primary {
+        transition: 0.2s all ease-in-out;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-accent-dark);
+        padding: var(--spacing-super-small) var(--spacing-medium);
+        color: var(--color-text-on-dark);
+        font-size: var(--font-size-medium);
+
+        &:hover {
+            background-color: var(--color-accent);
+        }
+    }
+
+    &.border {
+        transition: 0.2s all ease-in-out;
+        border: var(--width-separator-thin) solid var(--color-brand);
+        border-radius: var(--border-radius-medium);
+        padding: var(--spacing-super-small) var(--spacing-medium);
+        color: var(--color-brand);
+        font-size: var(--font-size-medium);
+
+        &:hover {
+            border-color: var(--color-brand-dark);
+            text-decoration: unset;
+            color: var(--color-brand-dark);
+        }
+    }
+
+    &.icon {
+        display: flex;
+        align-items: center;
+        transition: 0.2s all ease-in-out;
+        border-radius: var(--border-radius-medium);
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: var(--spacing-super-small) var(--spacing-extra-small);
+        line-height: 1;
+        color: var(--color-text-on-dark);
+
+        &:hover {
+            background-color: var(--color-brand);
+        }
+    }
+}

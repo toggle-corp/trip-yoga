@@ -1,0 +1,258 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--spacing-gigantic);
+    gap: var(--spacing-gigantic);
+
+    .hero {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 86vh;
+        min-height: 90vh;
+
+        .heroImage {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 86vh;
+            filter: brightness(50%);
+
+            .image {
+                object-fit: cover;
+                object-position: center bottom;
+            }
+        }
+
+        .bg {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 0;
+            background-color: #6096b4;
+            width: 100%;
+            height: 86vh;
+        }
+
+        .navbar {
+            flex-shrink: 0;
+            background-color: transparent;
+
+            .navbarContent {
+                background-color: transparent;
+            }
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: calc(4 * var(--spacing-gigantic)) var(--spacing-large);
+            gap: var(--spacing-medium);
+
+            .heading {
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+
+    .visionSection {
+        .content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: var(--spacing-gigantic);
+
+            .block {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: var(--spacing-small);
+
+                .description {
+                    max-width: 50rem;
+                    font-size: var(--font-size-large);
+                }
+            }
+        }
+    }
+
+    .classes {
+        .content {
+            display: grid;
+            grid-template-columns: minmax(20rem, 1fr) minmax(16rem, 0.6fr);
+            grid-gap: var(--spacing-large);
+
+            .leftContent {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-large);
+
+                .list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spacing-medium);
+
+                    .listItem {
+                        display: flex;
+                        align-items: center;
+                        gap: var(--spacing-small);
+                        font-size: var(--font-size-medium);
+
+                        &:before {
+                            content: '•';
+                        }
+                    }
+                }
+
+                .classesDescription {
+                    max-width: 30rem;
+                    font-size: var(--font-size-medium);
+                }
+            }
+
+            .classesImage {
+                height: 16rem;
+
+                .image {
+                    object-fit: cover;
+                    border-radius: var(--border-radius-medium);
+                }
+            }
+
+            @media screen and (max-width: 720px) {
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            }
+        }
+    }
+
+    .know {
+        .content {
+            display: grid;
+            grid-template-columns: minmax(10rem, 0.5fr) minmax(10rem, 0.5fr) minmax(16rem, 1fr);
+            grid-gap: var(--spacing-large);
+
+            .knowImage {
+                height: 20rem;
+
+                .image {
+                    object-fit: cover;
+                    border-radius: var(--border-radius-medium);
+                }
+            }
+
+            .rightContent {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-large);
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spacing-medium);
+
+                    .paragraph {
+                        text-align: left;
+                        font-size: var(--font-size-medium);
+                    }
+                }
+
+                .readMoreButton {
+                    align-self: flex-start;
+                }
+            }
+
+            @media screen and (max-width: 720px) {
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+                .rightContent {
+                    order: 1;
+                }
+
+                .knowImage {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .packages {
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            grid-gap: var(--spacing-large);
+
+            .knowImage {
+                height: 20rem;
+
+                .image {
+                    object-fit: cover;
+                    border-radius: var(--border-radius-medium);
+                }
+            }
+
+            .rightContent {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-large);
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spacing-medium);
+
+                    .paragraph {
+                        text-align: left;
+                    }
+                }
+
+                .readMoreButton {
+                    align-self: flex-start;
+                }
+            }
+
+            @media screen and (max-width: 720px) {
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+                .rightContent {
+                    order: 1;
+                }
+
+                .knowImage {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+            grid-gap: var(--spacing-medium);
+
+            .galleryImageContainer {
+                height: 16rem;
+                grid-column: span 2 / auto;
+
+                .galleryImage {
+                    object-fit: cover;
+                    border-radius: var(--border-radius-medium);
+                }
+
+                &:nth-child(6n + 1) {
+                    grid-column: span 3 / auto;
+                }
+
+                &:nth-child(6n) {
+                    grid-column: span 3 / auto;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        gap: unset;
+    }
+}
