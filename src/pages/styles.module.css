@@ -82,6 +82,7 @@
         .content {
             display: grid;
             grid-template-columns: minmax(20rem, 1fr) minmax(16rem, 0.6fr);
+            align-items: center;
             grid-gap: var(--spacing-large);
 
             .leftContent {
@@ -95,10 +96,12 @@
                     gap: var(--spacing-medium);
 
                     .listItem {
-                        display: flex;
-                        align-items: center;
-                        gap: var(--spacing-small);
+                        display: inline;
                         font-size: var(--font-size-medium);
+
+                        b {
+                            margin: var(--spacing-tiny);
+                        }
 
                         &:before {
                             content: '•';

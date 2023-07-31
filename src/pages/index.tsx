@@ -21,8 +21,12 @@ const missionDescription = 'To provide a supportive space where people can nurtu
 
 const classesDescription = 'Let\'s unleash your full potential together and witness the remarkable transformation that awaits you on the mat.';
 
-const aboutMePara1 = 'I\'m Aparajita, the founder of The Real Inner Peace Yoga (TRIP). My lifelong journey with yoga has been quite a ride – from practicing asanas as a child to experiencing ups and downs along the way.';
-const aboutMePara2 = 'Yoga has been my go-to sanctuary, helping me navigate life\'s challenges, manage stress, and enhance flexibility while fostering an overall sense of well-being. But it wasn\'t until later that I discovered its true power: the profound mental and spiritual connection it nurtures with oneself.';
+const aboutMePara1 = 'Hey there! I\'m Aparajita, the founder of The Real Inner Peace Yoga (TRIP) and I have experienced a lifelong connection with yoga. Growing up in a family that valued yoga, I initially practiced it to fit in, but over time, I began to discover the tremendous emotional and health benefits it brought into my life.';
+const aboutMePara2 = 'However, like everyone, I had my ups and downs, and there was a phase where I lost touch with yoga. It was during one of the lowest points in my life that I found myself turning back to this ancient practice for solace. Yoga became my sanctuary, guiding me through life\'s challenges and reigniting the profound mental and spiritual connection with myself.';
+const aboutMePara3 = 'This eye-opening experience sparked a deep desire to delve deeper into the essence of yoga. Fueled by passion, I embarked on a soul-enriching journey to the Divine Life Society in India to become a certified yoga teacher. It was there that I realized how the true wisdom of yoga had been overshadowed by fleeting fitness trends.';
+const aboutMePara4 = 'With a heart full of purpose, I returned to establish TRIP - a sanctuary where everyone can access the transformative benefits of authentic yoga. My mission is to make yoga inclusive, catering to all experience levels and fitness goals.';
+const aboutMePara5 = 'Join me on this TRIP, and together, let\'s unfold a world filled with peace, love, and self-discovery, one breath at a time.';
+const aboutMePara6 = 'Namaste';
 
 const galleryImages = [
     '/img/gallery1.jpeg',
@@ -119,16 +123,26 @@ function Home(props: Props) {
                 <div className={styles.leftContent}>
                     <div className={styles.list}>
                         <div className={styles.listItem}>
-                            Profound journey of discovery.
+                            Tailored classes for individuals of all
+                            <b>fitness levels</b>
                         </div>
                         <div className={styles.listItem}>
-                            Heightened emotional and intentional awareness.
+                            <b>Breathing exercises</b>
+                            for effective stress and mood disorder management
                         </div>
                         <div className={styles.listItem}>
-                            Increased flexibility and invigorated energy.
+                            <b>Mindfulness</b>
+                            lessons to improve concentration, focus, and emotional well-being.
                         </div>
                         <div className={styles.listItem}>
-                            Relaxation and blissful body experience.
+                            Heightened emotional and intentional awareness,
+                            invigorated energy, increased flexibility, and
+                            <b>blissful body relaxation</b>
+                        </div>
+                        <div className={styles.listItem}>
+                            Unlocking secrets to
+                            <b>manage emotions</b>
+                            and align your mind with financial and relational life goals
                         </div>
                     </div>
                     <div className={styles.classesDescription}>
@@ -151,14 +165,14 @@ function Home(props: Props) {
                 <ImageWrapper
                     className={styles.knowImage}
                     imageClassName={styles.image}
-                    src="/img/l.jpg"
+                    src="/img/me.jpeg"
                     alt="hero-image"
                     shaded
                 />
                 <ImageWrapper
                     className={styles.knowImage}
                     imageClassName={styles.image}
-                    src="/img/a.jpg"
+                    src="/img/l.jpg"
                     alt="hero-image"
                     shaded
                 />
@@ -176,10 +190,16 @@ function Home(props: Props) {
                         {showMore && (
                             <>
                                 <div className={styles.paragraph}>
-                                    {aboutMePara1}
+                                    {aboutMePara3}
                                 </div>
                                 <div className={styles.paragraph}>
-                                    {aboutMePara2}
+                                    {aboutMePara4}
+                                </div>
+                                <div className={styles.paragraph}>
+                                    {aboutMePara5}
+                                </div>
+                                <div className={styles.paragraph}>
+                                    {aboutMePara6}
                                 </div>
                             </>
                         )}
@@ -211,12 +231,16 @@ function Home(props: Props) {
                     days="Tuesdays and Thursdays"
                     rates={[
                         {
-                            price: '$250',
+                            price: '$25',
                             details: 'per lesson',
                         },
                         {
                             price: '$285',
                             details: 'for 12 sessions/person',
+                        },
+                        {
+                            price: '$960',
+                            details: 'for family of 4 people, 12 sessions',
                         },
                     ]}
                 />
@@ -230,24 +254,29 @@ function Home(props: Props) {
                         'Immerse yourself in the magic of yoga and foster self-care commitment.',
                     ]}
                     time="45 - 60 min"
-                    days="Monday, Wednesday & Friday"
+                    days="Monday to fridays"
                     rates={[
                         {
                             price: '$16',
                             details: 'per session',
                         },
                         {
-                            price: '$175',
-                            details: 'for 12 session / person',
+                            price: '$179',
+                            details: '12 sessions billed monthy',
+                        },
+                        {
+                            price: '$280',
+                            details: '20 sessions billed monthy',
                         },
                     ]}
                 />
                 <PackageCard
                     title="Sunday Classes"
                     points={[
-                        'Complimentary. Open to all, at no charge.',
-                        'Enjoy the convenience of practicing at home, saving time on travel.',
-                        'Scheduled as needed, but at least once a month, these classes address any uncertainties. Additionally, a designated time slot on Sundays allows those who missed earlier classes to catch up on essential content, providing a concise review of key aspects.',
+                        'complimentary Sunday classes, open to all, at no charge.',
+                        'aims to clarify specific practices, enhance breathwork, and provide additional support.',
+                        'Scheduled as needed, but at least once a month, these classes address any uncertainties.',
+                        'allows those who missed earlier classes to catch up on essential content, providing a concise review of key aspects.',
                     ]}
                     time="15 - 40 min"
                     days="Sundays"

@@ -1,0 +1,25 @@
+.policy {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--spacing-gigantic);
+    gap: var(--spacing-gigantic);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 50rem;
+        font-size: var(--font-size-medium);
+        gap: var(--spacing-medium);
+    }
+
+    .listItem {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-small);
+        font-size: var(--font-size-medium);
+
+        &:before {
+            content: '•';
+        }
+    }
+}

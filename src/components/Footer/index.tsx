@@ -83,7 +83,7 @@ function Footer(props: Props) {
                     </Heading>
                     <div className={styles.socialLinks}>
                         <Link
-                            href="https://www.facebook.com/TheMissingMaps"
+                            href="https://www.facebook.com/profile.php?id=100092267003485"
                             variant="icon"
                             target="_blank"
                             title="Facebook"
@@ -91,7 +91,7 @@ function Footer(props: Props) {
                             <IoLogoFacebook />
                         </Link>
                         <Link
-                            href="https://www.instagram.com/themissingmaps/"
+                            href="https://www.instagram.com/tripyoga.np/"
                             variant="icon"
                             target="_blank"
                             title="Instagram"
@@ -106,6 +106,12 @@ function Footer(props: Props) {
                     <div className={styles.leftContainer}>
                         Copyright © 2023 Trip Yoga
                     </div>
+                    <Link
+                        href="/policy"
+                        title="Company Policy"
+                    >
+                        Company Policy
+                    </Link>
                 </div>
             </div>
         </div>

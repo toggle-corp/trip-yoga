@@ -44,25 +44,25 @@ function Navbar(props: Props) {
                 >
                     <Link
                         className={styles.link}
-                        href="#about"
+                        href="/#about"
                     >
                         About
                     </Link>
                     <Link
                         className={styles.link}
-                        href="#packages"
+                        href="/#packages"
                     >
                         Packages
                     </Link>
                     <Link
                         className={styles.link}
-                        href="#gallery"
+                        href="/#gallery"
                     >
                         Gallery
                     </Link>
                     <Link
                         className={styles.link}
-                        href="#contact"
+                        href="/#contact"
                     >
                         Contact
                     </Link>
