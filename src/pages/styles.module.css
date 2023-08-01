@@ -240,24 +240,25 @@
     .gallery {
         .content {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
             grid-gap: var(--spacing-medium);
 
             .galleryImageContainer {
-                height: 16rem;
-                grid-column: span 2 / auto;
+                height: 18rem;
 
                 .galleryImage {
                     object-fit: cover;
                     border-radius: var(--border-radius-medium);
                 }
 
-                &:nth-child(6n + 1) {
-                    grid-column: span 3 / auto;
+                &:nth-child(3n + 1) {
+                    grid-column: span 2 / auto;
                 }
 
-                &:nth-child(6n) {
-                    grid-column: span 3 / auto;
+                @media screen and (max-width: 720px) {
+                    &:nth-child(3n + 1) {
+                        grid-column: unset;
+                    }
                 }
             }
         }

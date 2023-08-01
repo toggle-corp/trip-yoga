@@ -29,9 +29,9 @@ const aboutMePara5 = 'Join me on this TRIP, and together, let\'s unfold a world 
 const aboutMePara6 = 'Namaste';
 
 const galleryImages = [
-    '/img/gallery1.jpeg',
+    '/img/gallery-twist.jpg',
     '/img/pump2.jpeg',
-    '/img/gallery3.jpg',
+    '/img/shut-eyes.jpg',
     '/img/gallery4.jpg',
     '/img/pump.jpeg',
     '/img/gallery6.jpg',
