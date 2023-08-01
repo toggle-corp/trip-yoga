@@ -123,26 +123,36 @@ function Home(props: Props) {
                 <div className={styles.leftContent}>
                     <div className={styles.list}>
                         <div className={styles.listItem}>
-                            Tailored classes for individuals of all
-                            <b>fitness levels</b>
+                            <div className={styles.text}>
+                                Tailored classes for individuals of all
+                                <b>fitness levels</b>
+                            </div>
                         </div>
                         <div className={styles.listItem}>
-                            <b>Breathing exercises</b>
-                            for effective stress and mood disorder management
+                            <div className={styles.text}>
+                                <b>Breathing exercises</b>
+                                for effective stress and mood disorder management
+                            </div>
                         </div>
                         <div className={styles.listItem}>
-                            <b>Mindfulness</b>
-                            lessons to improve concentration, focus, and emotional well-being.
+                            <div className={styles.text}>
+                                <b>Mindfulness</b>
+                                lessons to improve concentration, focus, and emotional well-being.
+                            </div>
                         </div>
                         <div className={styles.listItem}>
-                            Heightened emotional and intentional awareness,
-                            invigorated energy, increased flexibility, and
-                            <b>blissful body relaxation</b>
+                            <div className={styles.text}>
+                                Heightened emotional and intentional awareness,
+                                invigorated energy, increased flexibility, and
+                                <b>blissful body relaxation</b>
+                            </div>
                         </div>
                         <div className={styles.listItem}>
-                            Unlocking secrets to
-                            <b>manage emotions</b>
-                            and align your mind with financial and relational life goals
+                            <div className={styles.text}>
+                                Unlocking secrets to
+                                <b>manage emotions</b>
+                                and align your mind with financial and relational life goals
+                            </div>
                         </div>
                     </div>
                     <div className={styles.classesDescription}>

@@ -9,6 +9,7 @@ import {
 } from 'react-icons/io5';
 
 import Heading from 'components/Heading';
+import Link from 'components/Link';
 
 import styles from './styles.module.css';
 
@@ -77,6 +78,16 @@ function PackageCard(props: Props) {
                         <div>{item.details}</div>
                     </div>
                 ))}
+            </div>
+            <div className={styles.footer}>
+                <Link
+                    href={`mailto:trip.wellness2021@gmail.com?subject=${title}`}
+                    target="_blank"
+                    title="Email"
+                    variant="button"
+                >
+                    Book Now
+                </Link>
             </div>
         </div>
     );

@@ -18,6 +18,7 @@
     --color-brand-dark: #194355;
     --color-foreground: #ffffff;
     --color-background-light: #fbfbfb;
+    --color-accent-alt: #6096b4;
 
     --color-border-light: #d0d0d0;
     --color-background-brand-light: #f6f8ff;
@@ -66,7 +67,7 @@
     --spacing-super-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-mega-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-gigantic: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
-    --spacing-enourmous: calc(var(--spacing-gigantic) * var(--multiplier));
+    --spacing-enormous: calc(var(--spacing-gigantic) * var(--multiplier));
 
     --width-scrollbar: 1rem;
     --radius-scrollbar-border: 0.25rem;

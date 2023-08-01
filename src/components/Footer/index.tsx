@@ -28,7 +28,7 @@ function Footer(props: Props) {
     return (
         <div
             className={_cs(className, styles.footer)}
-            id="footer"
+            id="contact"
         >
             <div className={styles.topContainer}>
                 <div

@@ -96,8 +96,14 @@
                     gap: var(--spacing-medium);
 
                     .listItem {
-                        display: inline;
+                        display: flex;
+                        align-items: center;
+                        gap: var(--spacing-small);
                         font-size: var(--font-size-medium);
+
+                        .text {
+                            font-size: var(--font-size-medium);
+                        }
 
                         b {
                             margin: var(--spacing-tiny);
@@ -110,7 +116,7 @@
                 }
 
                 .classesDescription {
-                    max-width: 30rem;
+                    max-width: 40rem;
                     font-size: var(--font-size-medium);
                 }
             }
@@ -137,6 +143,7 @@
             grid-gap: var(--spacing-large);
 
             .knowImage {
+                margin-top: var(--spacing-enormous);
                 height: 20rem;
 
                 .image {
@@ -175,6 +182,7 @@
 
                 .knowImage {
                     order: 2;
+                    margin-top: 0;
                 }
             }
         }

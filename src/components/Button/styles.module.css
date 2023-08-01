@@ -9,13 +9,13 @@
     &.primary {
         transition: 0.2s all ease-in-out;
         border-radius: var(--border-radius-medium);
-        background-color: var(--color-accent-dark);
+        background-color: var(--color-accent-alt);
         padding: var(--spacing-super-small) var(--spacing-medium);
         color: var(--color-text-on-dark);
         font-size: var(--font-size-medium);
 
         &:hover {
-            background-color: var(--color-accent);
+            background-color: var(--color-brand);
         }
     }
 

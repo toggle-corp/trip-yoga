@@ -5,10 +5,10 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        padding: var(--spacing-enourmous) var(--spacing-super-large);
+        padding: var(--spacing-enormous) var(--spacing-super-large);
         width: 100%;
         max-width: var(--width-page-max);
-        gap: var(--spacing-enourmous);
+        gap: var(--spacing-enormous);
 
         .heading {
             align-self: center;
